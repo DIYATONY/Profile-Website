@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f5c8e0, #d6a4e0);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #c2185b;
+    }
+    header h1 {
+      color: black;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffdf6c;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      flex-direction: column;
+    }
+
+    .qualification-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .qualification-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 280px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .qualification-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    .qualification-card h3 {
+      margin-bottom: 1rem;
+      color: #6a1b9a;
+      font-size: 1.6rem;
+    }
+
+    .qualification-card p {
+      margin: 0.5rem 0;
+      line-height: 1.5;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #ff4da6;
+      animation: bounce 1.5s infinite alternate;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    footer {
+      background: linear-gradient(90deg, #6a1b9a, #4a148c);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: white;
+    }
+ </style>	
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>✨Hello,Welcome to my Profile✨</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobby.html">My Hobby</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="extracurricular.html">Extracurricular</a></li>
+                <li><a href="parents.html">Family</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Section for Contact Page -->
+     <main>
+    <h2>Contact Me</h2>
+    <p>If you would like to get in touch, feel free to email me at 
+        <a href="mailto:diyatonyv@gmail.com">diyatonyv@gmail.com</a>.
+    </p>
+
+    <!-- Intro Text -->
+    <p>
+        I’d love to hear from you! Whether it’s a project collaboration, a question, or just to say hi, feel free to reach out.  
+        Let’s connect! Drop me a message and I’ll get back to you as soon as possible.
+    </p>
+
+    <!-- Contact Details Section -->
+    <div class="qualification-container" style="margin-top: 40px;"> <!-- Added margin-top -->
+        <div class="qualification-card">
+            <div class="icon">📧</div>
+            <h3>Email</h3>
+            <p>diyatonyv@gmail.com</p>
+        </div>
+        <div class="qualification-card">
+            <div class="icon">📞</div>
+            <h3>Phone</h3>
+            <p>+91-7907486590</p>
+        </div>
+        <div class="qualification-card">
+            <div class="icon">📍</div>
+            <h3>Location</h3>
+            <p>Ernakulam, India</p>
+        </div>
+        <div class="qualification-card">
+            <div class="icon">💻</div>
+            <h3>Socials</h3>
+            <p>
+                <a href="https://www.linkedin.com/in/diya-tony-7aa59732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a> | 
+                <a href="https://www.instagram.com/tonydiya?igsh=MTk0YnBhYTN2dTczaw==">Instagram</a> | 
+                <a href="https://github.com/DIYATONY/MDC">GitHub</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Feedback Form Section -->
+    <div class="qualification-container" style="margin-top: 2rem;">
+        <div class="qualification-card" style="width: 100%; max-width: 600px;">
+            <h3>Send Me a Message</h3>
+            <form name="frm" method="POST" action="feedback.html">
+                <p>
+                    <label for="name">Name *</label><br>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+                </p>
+                <p>
+                    <label for="email">Email *</label><br>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+                </p>
+                <p>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject" name="subject" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+                </p>
+                <p>
+                    <label for="message">Message *</label><br>
+                    <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+                </p>
+                <p style="text-align: center;">
+                    <button type="submit" style="padding: 10px 20px; border-radius: 10px; border: none; background-color: #c2185b; color: black; font-weight: bold; cursor: pointer;">Send Message</button>
+                </p>
+            </form>
+            <p style="text-align: center; font-size: 0.9rem; color: #555;">I try to respond to every message within 24 hours. Your feedback, queries, or collaborations are always welcome!</p>
+        </div>
+    </div>
+</main>

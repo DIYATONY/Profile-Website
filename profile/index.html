@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diya Tony - Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f5c8e0, #d6a4e0); 
+      color: black;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #c2185b; /* Dark Contrast Pink */
+      color: black;
+    }
+
+    marquee {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffdf6c;
+    }
+
+    /* Main Layout */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 2rem; /* space between card and image */
+      flex-wrap: wrap;
+    }
+
+    /* Profile Card */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      animation: fadeIn 1.2s ease-in-out;
+      color: black;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #6a1b9a;
+    }
+
+    .profile-card p {
+      margin: 0.4rem 0;
+      line-height: 1.5;
+    }
+
+    
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #6a1b9a, #4a148c);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffdf6c;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <marquee behavior="scroll" direction="left">✨Hello,Welcome to my Profile✨</marquee>
+    <nav>
+      <ul>
+	<li><a href="index.html">Home</a></li>
+        <li><a href="hobby.html">My Hobby</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+        <li><a href="parents.html">Family</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="profile-card">
+        <h2>Hello Amigos 👋</h2>
+        <p><strong>Name:</strong> Diya Tony</p>
+        <p><strong>Program:</strong> BBA F&B</p>
+        <p><strong>Department:</strong> Business Administration</p>
+        <p><strong>Email:</strong> bba2518@rajagiri.edu.in</p>
+        <p><strong>DOB:</strong> 22-08-2007</p>
+        <p><strong>Phone:</strong> 7907486590</p>
+      </div>
+      <!-- Profile Picture -->
+      <img src="img.jpeg" width="200" height="200">
+      <!-- Replace your-photo.jpg with actual image file name -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Diya Tony | My Personal Website</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
